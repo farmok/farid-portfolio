@@ -1,0 +1,33 @@
+/* --- COLORS --- */
+
+/* --- Main Colors --- */
+
+$color-0: #313132;
+$color-1: #ff3366;
+$color-2: #999;
+$color-3: #149dcc;
+$color-4: #fff;
+
+/* --- Primary Variations --- */
+
+$color-5: darken($color-1, 35%);
+$color-6: lighten($color-1, 15%);
+
+/* --- Secondary Variations --- */
+
+$color-7: darken($color-2, 25%);
+$color-8: lighten($color-2, 20%);
+
+/* --- Tertiary Variations --- */
+
+$color-9: darken($color-3, 25%);
+$color-10: lighten($color-3, 20%);
+
+/* --- Social Colors --- */
+
+$twitter: #00aced;
+$linkedin: #007bb6;
+$pinterest: #cb2027;
+$google: #dd4b39;
+$codepen: #000;
+$email: $color-2;

@@ -1,0 +1,122 @@
+/*--- main elements ---*/
+
+body{
+	background: #000;
+ color: $color-0;
+ font: 300 12px/1.4em 'Open Sans',sans-serif;
+ margin: 0;
+ padding: 0;
+
+ // @media screen and (min-width: 640px){
+ //  font-size: 14px;
+ // }
+
+ // @media screen and (min-width: 960px){
+ //  font-size: 16px;
+ // }
+}
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+}
+
+iframe{
+	margin: 20px 0;
+}
+
+/*--- heading styles ---*/
+
+h1,h2,h3,h4,h5,h6{
+ text-transform: uppercase;
+
+ .dark &{
+  color: $color-4;
+ }
+}
+
+h1{
+ color: $color-1;
+ font-size: 2em;
+ font-weight: 600;
+}
+
+h2{
+ color: $color-2;
+ font-size: 1.5em;
+ font-weight: 400;
+}
+
+h3{
+ color: $color-3;
+ font-size: 1.125em;
+ font-weight: 600;
+}
+
+h4{
+ color: $color-1;
+ font-size: .8625em;
+ font-weight: 300;
+}
+
+h5{
+ color: $color-2;
+ font-size: .8625em;
+ font-weight: 600;
+}
+
+h6{
+ color: $color-0;
+ font-size: 1.125em;
+ font-weight: 300;
+}
+
+/*--- paragraph styles ---*/
+
+
+p{
+ color: $color-0;
+ margin: 10px 0 15px;
+
+ & .dark{
+  color: $color-4;
+ }
+}
+
+/*--- link styles ---*/
+
+a, a:link{
+ color: $color-0;
+}
+
+a:hover{
+ color: $color-1;
+}
+
+/*--- list styles ---*/
+
+li{
+ display: inline-block;
+ list-style: none;
+}
+
+/*--- image styles ---*/
+
+img{
+	display: block;
+}
+
+#farmok{
+ background: #fff;
+ box-shadow: 0 0 10px rgba(#000,.25);
+ left: 0;
+ min-width: 320px;
+ overflow-y: auto;
+ position: relative;
+ top: 0;
+ transition: all 0.5s linear;
+ width: 100%;
+ z-index: 85;
+}

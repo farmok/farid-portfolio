@@ -1,0 +1,48 @@
+/* --- form elements --- */
+
+label {
+	color: $color-1;
+ font-size: .8675em;
+ font-weight: 400;
+ text-transform: uppercase;
+}
+
+/* --- form input fields --- */
+
+input{
+	border: solid 1px $color-2;
+	transition: all ease .5s;
+
+	&:focus {
+		border: solid 1px $color-1;
+		box-shadow: 0 0 10px -5px $color-1;
+	}
+}
+
+textarea{
+	border: solid 1px $color-2;
+	transition: all ease .5s;
+
+	&:focus {
+		border: solid 1px $color-1;
+		box-shadow: 0 0 10px -5px $color-1;
+	}
+}
+
+/* --- form buttons --- */
+
+button{
+	background: $color-1;
+	border: none;
+	color: $color-4;
+	cursor: pointer;
+	display: inline-block;
+ font-size: .75em;
+ padding: 4px 50px;
+ text-transform: uppercase;
+
+ &:hover{
+  background: $color-4;
+  color: $color-4;
+ }
+}

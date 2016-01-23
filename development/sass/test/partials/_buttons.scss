@@ -1,0 +1,88 @@
+/* --- button structure --- */
+
+// .button-primary, .button-secondary{
+//  display: inline-block;
+//  font-size: .75em;
+//  padding: 4px 50px;
+//  text-transform: uppercase;
+// }
+
+.button{
+ display: inline-block;
+ font-size: .75em;
+ padding: .3em 4em;
+ text-transform: uppercase;
+
+ & .primary{
+  background: $color-0;
+  color: $color-4;
+
+  &:hover{
+   background: $color-2;
+   color: $color-4;
+  }
+ }
+}
+
+
+// .button-default{
+//  display: inline-block;
+//  font-size: .75em;
+//  padding: 4px 50px;
+//  text-transform: uppercase;
+// }
+
+/* --- button colors on a light background --- */
+
+
+.button-secondary{
+	background: $color-1;
+	color: $color-4;
+
+ &:hover{
+  background: $color-4;
+  color: $color-4;
+ }
+}
+
+.button-default{
+ border: 1px solid $color-0;
+ color: $color-0;
+
+ &:hover{
+ 	border: 1px solid $color-2;
+		color: $color-2;
+ }
+}
+
+/* --- button colors on a dark background --- */
+
+.dark-button-primary{
+	background: $color-4;
+	color: $color-0;
+
+ &:hover{
+  background: $color-2;
+  color: $color-0;
+ }
+}
+
+.dark-button-secondary{
+	background: $color-1;
+	color: $color-4;
+
+ &:hover{
+  background: $color-4;
+  color: $color-4;
+ }
+}
+
+.dark-button-default{
+ border: 1px solid $color-4;
+ color: $color-4;
+
+ &:hover{
+ 	border: 1px solid $color-2;
+		color: $color-2;
+ }
+}

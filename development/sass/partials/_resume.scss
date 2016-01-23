@@ -1,0 +1,48 @@
+/*--- main elements ---*/
+
+#resume{
+
+	h1, h2, h3, h4, h5 {
+		line-height: 1.5em;
+		margin: 0;
+	}
+
+	h1{
+		color: #ccc;
+		font-size: 1.75em;
+		text-transform: uppercase;
+	}
+
+	h2{
+		color: #222;
+		font-size: 1.35em;
+	}
+
+	h3{
+		color: #666;
+		font-size: 1.2em;
+	}
+
+	h4{
+		color: #777;
+		font-size: 1.1em;
+	}
+
+	h5{
+		color: #888;
+		font-size: 1em;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	div{
+		border-top: 1px solid #ddd;
+		padding: 25px 0;
+	}
+
+	div:first-child{
+		border-top: none;
+	}
+}

@@ -1,0 +1,117 @@
+footer{
+ background: $color-0;
+ margin: 25px 0 0;
+
+ .social{
+  margin: 0 auto;
+  display: block;
+  height: 50px;
+  width: 250px;
+
+  ul{
+   padding: 10px 0;
+
+   li{
+    float: left;
+   }
+  }
+
+  .social-icon{
+   background: $color-7;
+   border-radius: 50%;
+   cursor: pointer;
+   display: inline-block;
+   height: 30px;
+   margin: 0 5px;
+   width: 30px;
+
+   &:before{
+    font-family: FontAwesome;
+   }
+  }
+
+  .twitter{
+   &:hover{
+    background: $twitter;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f099';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+
+  .linkedin{
+   &:hover{
+    background: $linkedin;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f0e1';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+
+  .pinterest{
+   &:hover{
+    background: $pinterest;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f231';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+
+  .google{
+   &:hover{
+    background: $google;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f0d5';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+
+  .codepen{
+   &:hover{
+    background: $codepen;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f1cb';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+
+  .email{
+   &:hover{
+    background: $email;
+   }
+
+   &:before{
+    color: $color-4;
+    content:'\f0e0';
+    display: block;
+    line-height: 30px;
+    text-align: center;
+   }
+  }
+ }
+}

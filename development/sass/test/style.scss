@@ -1,0 +1,23 @@
+// main modules
+
+@import 'modules/variables';
+@import 'modules/mixin';
+
+// main styles
+
+@import 'partials/main';
+@import 'partials/buttons';
+@import 'partials/forms';
+@import 'partials/navigation';
+@import 'partials/header';
+@import 'partials/footer';
+
+// page styles
+
+@import 'partials/hero';
+@import 'partials/content';
+@import 'partials/resume';
+
+
+
+

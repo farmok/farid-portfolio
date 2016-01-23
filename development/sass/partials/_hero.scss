@@ -1,0 +1,158 @@
+.hero{
+ background: url('../images/hero.jpg') no-repeat top center #fff;
+ background-size: cover;
+ box-shadow: 0 2px 15px -5px rgba(0,0,0,.5), 0 150px 0 $color-3;
+ height: 280px;
+ min-width: 320px;
+ overflow: hidden;
+ position: relative;
+ top: 0px;
+ width: 100%;
+ z-index: -1;
+
+ @media only screen and (min-width: 640px){
+  height: 450px;
+ }
+
+ @media only screen and (min-width: 960px){
+  height: 550px;
+ }
+}
+
+.project-hero{
+ background: url('../images/hero.jpg') no-repeat top center #fff;
+ background-size: cover;
+ box-shadow: 0 2px 15px -5px rgba(0,0,0,.5), 0 150px 0 $color-1;
+ height: 280px;
+ min-width: 320px;
+ overflow: hidden;
+ position: relative;
+ top: 0px;
+ width: 100%;
+ z-index: -1;
+
+ @media screen and (min-width: 640px){
+  height: 450px;
+ }
+
+ @media screen and (min-width: 960px){
+  height: 550px;
+ }
+
+ &[rel="project-tls-science"]{
+  background: url('../images/tls-science.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-holiday-central"]{
+  background: url('../images/holiday-central.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-shop-groceries"]{
+  background: url('../images/shop-groceries.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-account-snapshot"]{
+  background: url('../images/account-snapshot.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-booking-engine"]{
+  background: url('../images/booking-engine.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-casino-mobile-site"]{
+  background: url('../images/casino-mobile-site.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="project-aceplay-app"]{
+  background: url('../images/aceplay-app.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+
+ &[rel="gallery"]{
+  background: url('../images/gallery.jpg') no-repeat top center #fff;
+  background-size: cover;
+ }
+}
+
+.about-hero{
+ background: url('../images/about-me.jpg') no-repeat top center #fff;
+ background-size: cover;
+ box-shadow: 0 2px 15px -5px rgba(0,0,0,.5), 0 150px 0 $color-3;
+ height: 280px;
+ min-width: 320px;
+ overflow: hidden;
+ position: relative;
+ top: 0px;
+ width: 100%;
+ z-index: -1;
+
+ @media screen and (min-width: 640px){
+  height: 450px;
+ }
+
+ @media screen and (min-width: 960px){
+  height: 550px;
+ }
+}
+
+.headline-container{
+ background:rgba($color-0,.65);
+ box-shadow: 0 2px 10px -5px rgba(0,0,0,.75);
+ margin: 0 auto;
+ max-width: 960px;
+ min-width: 320px;
+ position: relative;
+ text-transform: uppercase;
+ top: 45px;
+ width: 100%;
+
+ @media screen and (min-width: 460px){
+ 	top: 45px;
+ }
+
+ @media screen and (min-width: 640px){
+ 	top: 125px;
+ }
+
+ @media screen and (min-width: 960px){
+  top: 200px;
+ }
+}
+
+.hero-headline{
+ float: right;
+ padding: 50px 10px;
+ width: 150px;
+
+ @media screen and (min-width: 460px){
+ 	max-width: 400px;
+  min-width: 200px;
+  padding: 25px;
+  width: 40%;
+ }
+
+ h1{
+ 	color: $color-0;
+ 	display: table-cell;
+ 	font-size: 1.5em;
+  font-weight: 300;
+  line-height: .95em;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  @media screen and (min-width: 460px){
+  	font-size: 1.75em;
+  }
+
+  > span{
+   font-size: .5em;
+  }
+ }
+}

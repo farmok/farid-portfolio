@@ -1,0 +1,46 @@
+.c-header{
+ background: rgba($color-4,.75);
+ height: 50px;
+ position: fixed;
+ width: 100%;
+ z-index: 999;
+
+ .c-logo{
+ 	cursor: pointer;
+ 	display: block;
+ 	fill: $color-0; 
+  height: 40px;
+  margin: 5px;
+  position: absolute;
+  left: 50px;
+  transition: fill 0.25s ease-out;
+  width: 140px;
+
+  &:hover{
+  	fill: $color-1; 
+  }
+ }
+
+ .c-menu__button{
+		cursor: pointer;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		
+		&:before{
+			color: $color-0;
+			content: '\f0c9';
+			display: inline-block;
+			font: 400 28px/50px FontAwesome;
+			text-align: center;
+			transition: color 0.25s ease-out;
+			width: 50px;
+		}
+
+		&:hover::before{
+			color: $color-1;
+		}
+ }
+}

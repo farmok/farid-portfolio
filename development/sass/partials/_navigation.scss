@@ -1,0 +1,141 @@
+/*--- main navigation ---*/
+
+#navigation{
+ display: none;
+}
+
+#navigation + label{
+ color: $color-0;
+ cursor: pointer;
+ transition: all 0.5s linear;
+}
+
+#navigation + label:before{
+ color: $color-0;
+ content: '\f0c9';
+ display: inline-block;
+ font: 400 28px/50px FontAwesome;
+ height: 50px;
+ position: relative;
+ text-align: center;
+ transition: all 0.5s ease;
+ width: 35px;
+}
+
+#navigation + label:hover:before{
+ color: $color-1;
+}
+
+#navigation, #navigation + label{
+ left: 0;
+ position: fixed;
+ top: 0;
+ z-index: 999;
+
+ &:checked{
+  + label {
+    left: 200px;
+
+    @media screen and (min-width: 960px){
+     left: 300px;
+    }
+  }
+  
+  ~ #farmok {
+    left: 200px;
+    width: 100%;
+
+    header{
+     width: 100%;
+     width: calc(100% - 200px);
+    }
+
+    @media screen and (min-width: 960px){
+     left: 300px;
+     width: 100%;
+
+     header{
+      width: 100%;
+      width: calc(100% - 300px);
+     }
+    }
+  }
+ }
+}
+
+/*--- navigation menu ---*/
+
+#menu{
+ @include linear-gradient($color-0, #000);
+ 
+ // background: $color-0;
+ // height: 100vh;
+ left: 0;
+ transition: all .5s linear;
+ position: fixed;
+ top: 0px;
+ width: 320px;
+ z-index: 0;
+
+ .nav{
+  display: inline-block;
+  float: left;
+
+  .nav-title{
+   border-bottom: 1px solid rgba(255,255,255,.15);
+   color: $color-4;
+   font-size: 1em;
+   font-weight: 400;
+   height: 50px;
+   line-height: 50px;
+   list-style: none;
+   padding: 0 10px;
+   text-transform: uppercase;
+   transition: all 0.5s ease;
+   width: 320px;
+   z-index: 9999;
+  }
+
+  .primary{
+   border-bottom: 1px solid rgba(255,255,255,.15);
+   color: $color-2;
+   font-size: 1em;
+   height: 50px;
+   line-height: 50px;
+   list-style: none;
+   padding: 0 10px 0 20px;
+   text-transform: uppercase;
+   transition: all 0.5s ease;
+   width: 320px;
+   z-index: 9999;
+
+   &:before{
+    color: $color-2;
+    content: '\f0da';
+    display: inline-block;
+    float: right;
+    font: 400 12px/20px FontAwesome;
+    height: 20px;
+    position: relative;
+    right: 125px;
+    text-align: center;
+    top: 15px;
+    transition: all 0.5s ease;
+    width: 20px;
+
+    @media screen and (min-width: 960px){
+     right: 25px;
+    }
+   }
+
+   &:hover{
+    background: $color-5;
+    color: $color-4;
+
+    &:before{
+     color: $color-4;
+    }
+   }
+  }
+ }
+}
